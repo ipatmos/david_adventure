@@ -310,7 +310,8 @@ nav.scrolled { background:rgba(3,8,16,0.97); border-bottom:1px solid rgba(212,15
   animation:fadeInDown 0.8s 0.25s ease forwards;
 }
 
-/* "2026 대한민국 성경학교" eyebrow */
+/* "2026 대한민국 성경학교" eyebrow
+   위아래 줄이 너무 붙어 보이면 margin-bottom 값을 키우세요 */
 .hero-eyebrow {
   display:block;
   width:100%;
@@ -318,8 +319,9 @@ nav.scrolled { background:rgba(3,8,16,0.97); border-bottom:1px solid rgba(212,15
   font-size:clamp(28px, 2.65vw, 40px);
   font-weight:400;
   letter-spacing:-0.02em;
+  line-height:1.08;
   color:rgba(255,236,205,0.92);
-  margin-bottom:2px;
+  margin-bottom:12px;
   text-align:right;
   white-space:nowrap;
   text-shadow:0 0 24px rgba(255,209,102,0.18);
@@ -1158,13 +1160,15 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.06); pad
   filter:drop-shadow(0 10px 28px rgba(0,0,0,0.28));
 }
 
-/* 히어로 다윗 로고 아래 간격: 로고와 '어드벤처'가 겹쳐 보이면 margin-bottom 값을 키우세요 */
+/* 히어로 다윗 로고 크기/아래 간격
+   - 로고가 크면 width 값을 줄이세요
+   - 로고와 '어드벤처'가 붙으면 margin-bottom 값을 키우세요 */
 .hero-dawit-logo {
   display:block;
-  width:clamp(270px, 31vw, 430px);
+  width:clamp(220px, 27vw, 360px);
   height:auto;
   margin-left:auto;
-  margin-bottom:20px;
+  margin-bottom:24px;
   opacity:0;
   animation:blastIn 0.7s 0.55s cubic-bezier(0.16,1,0.3,1) forwards;
   filter:drop-shadow(0 8px 40px rgba(0,0,0,0.7)) drop-shadow(0 0 40px rgba(212,152,42,0.3));
@@ -1201,10 +1205,10 @@ footer { background:var(--ink); border-top:1px solid rgba(255,255,255,0.06); pad
   .hero-content { padding:88px 24px 0 24px; max-width:none; }
   .hero-headline, .hero-title-wrap { width:100%; }
   .hero-brand { font-family: var(--font-hero-brand); font-size:clamp(11px, 3vw, 14px); font-weight:400; letter-spacing:0.01em; padding:8px 14px; margin-bottom:10px; }
-  .hero-eyebrow { font-family: var(--font-hero-eyebrow); font-size:clamp(20px, 4.8vw, 29px); font-weight:400; letter-spacing:-0.02em; margin-bottom:2px; }
+  .hero-eyebrow { font-family: var(--font-hero-eyebrow); font-size:clamp(20px, 4.8vw, 29px); font-weight:400; letter-spacing:-0.02em; line-height:1.08; margin-bottom:10px; }
   .hero-title-wrap { width:100%; padding-right:0.04em; }
   .hero-t2 { font-size:clamp(60px, 17vw, 108px); padding-right:0.01em; letter-spacing:-0.02em; line-height:1.08; margin-top:10px; }
-  .hero-dawit-logo { width:clamp(230px, 62vw, 360px); margin-bottom:16px; }
+  .hero-dawit-logo { width:clamp(190px, 52vw, 300px); margin-bottom:18px; }
   .reg-title-wrap { padding-right:0.16em; }
   
 .movie-logo-text {
